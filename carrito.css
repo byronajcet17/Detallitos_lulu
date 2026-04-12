@@ -1,0 +1,52 @@
+html{ 
+    background-color: pink;
+}
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input {
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding:0px;
+    font-size: 15px;
+}
+input  { 
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 
+}
+img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+    border-radius: 200px;
+    background-color: rgb(244, 167, 180);
+    
+   
+    transform: translate(-50%, -50%);
+}
+/* Estilos generales para móviles */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.contenedor {
+    width: 100%; /* Ocupa todo el ancho en móvil */
+}
+
+/* Estilos para computadoras (pantallas más grandes) */
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%; /* Más estrecho en escritorio */
+        margin: 0 auto; /* Centrado */
+    }
+}
