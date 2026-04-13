@@ -14,13 +14,13 @@ input {
     padding:0px;
     font-size: 15px;
 }
-input  { 
+input{ 
     position: absolute;
     top: 96%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 
-}
+    }
+
 img {
     position: absolute;
     top: 40%;
