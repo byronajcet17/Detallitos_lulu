@@ -33,20 +33,3 @@ img {
    
     transform: translate(-50%, -50%);
 }
-/* Estilos generales para móviles */
-body {
-    font-size: 16px;
-    padding: 10px;
-}
-
-.contenedor {
-    width: 100%; /* Ocupa todo el ancho en móvil */
-}
-
-/* Estilos para computadoras (pantallas más grandes) */
-@media (min-width: 768px) {
-    .contenedor {
-        width: 80%; /* Más estrecho en escritorio */
-        margin: 0 auto; /* Centrado */
-    }
-}

@@ -5,12 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detallitos lulu</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    
+    <aside class="sidebar">
+        <form class="sidebar_form">
+            <input type="checkbox" id="open-menu">
+            <label for="open-menu" class="material-symbols-outlined" for="open-menu">Home</label>
+        </form>
+        <picture class="sidebar_picture">
+            <source srcset="logo.png" media="(max-width:57.5rem)">
+            <img src="logo.png">
+        </picture>
+        <nav class="sidebar_nav">
+            <ul>
+                 <li class="sidebar_item">
+                    <span class="material-symbols-outlined">menu</span>
+                    <a href="#abrigos">Inicio</a>
+                </li>
+                <li class="sidebar_item">
+                    <span class="material-symbols-outlined">🧥</span>
+                    <a href="#abrigos">Abrigos</a>
+                </li>
+                 <li class="sidebar_item">
+                    <span class="material-symbols-outlined">👕</span>
+                    <a href="#abrigos">Camisas</a>
+                </li>
+                 <li class="sidebar_item">
+                    <span class="material-symbols-outlined">👖</span>
+                    <a href="#abrigos">Pantalones</a>
+                </li>
+                <hr>
+                <li class="sidebar_item">
+                    <span class="cart-count">🛒</span>
+                <a href="carrito.html">Carrito </a>
+            </li>
+            </ul>
+        </nav>
+    </aside>
     <div class="container">
             <header>
-            
             <center>
                 <div class="logo">
                 <p>Detallitos Lulú</div>
@@ -19,15 +53,7 @@
               </div>
             </center>
             </nav>
-          </header>
-            <hr>
-             <li><a href="carrito.html">🛒 Carrito <span class="cart-count">3</span></a></li>
-            <a href="producto.html">Carrito</a> 
-            </ul>
-            </nav>
-        </div>
-        
-        
+          </header>  
 </body>
 </html>
 </body>
