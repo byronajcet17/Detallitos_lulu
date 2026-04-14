@@ -1,5 +1,6 @@
 html  {
     background-color: pink;
+    user-select: none;
 }
 * {
     margin: 0;
@@ -15,7 +16,6 @@ hr {
 img {
     width: 7000000px;
     height: 130px;
-    border-radius: 50%;
 }
 /*sirve para dptr */
 .sidebar {
@@ -151,6 +151,106 @@ input[type="checkbox"]:checked ~ label::before {
 .sidebar:has(input[type="checkbox"]:checked) :is(.sidebar_item a, .profile-option) {
     display: none;
 }
+
+/* Estilos para el contenido principal */
+
+
+
+.productos{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 250px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.producto {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  
+
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* Precio */
+.precio {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Iconos */
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.icons button {
+  background: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.icons button:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+/* Mostrar iconos al pasar el mouse */
+.img-box:hover .icons {
+  opacity: 1;
+}
+
+h3 {
+  margin: 15px 0;
+}
+
+/* 📱 MÓVIL */
+@media (max-width: 600px) {
+  .icons {
+    opacity: 1;
+    position: static;
+    transform: none;
+    margin: 10px 0;
+    justify-content: center;
+  }
+}
+
 
 
    
