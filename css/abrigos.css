@@ -2,40 +2,44 @@ html {
     background-color: pink;
     user-select: none;
 }
-input {
-    background-color: pink;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding:2type px;
-    font-size: 15px;
+/* Esto hace que la barra NO se mueva al bajar la página */
+.header-estatico {
+  position: fixed;        /* Se queda pegado a la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;            /* Ocupa todo el ancho */
+  height: 70px;           /* Altura fija de tu barra */
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+  z-index: 1000;          /* Asegura que siempre esté por encima de las fotos */
+  display: flex;
+  align-items: center;    /* Centra el contenido verticalmente */
 }
-input {
-    position: absolute;
-    top: 98%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Logo a la izq, Menú a la derecha */
+  align-items: center;
+  width: 90%;             /* Espacio a los lados */
+  margin: 0 auto;         /* Centra el contenedor */
 }
-li {
-    list-style: none;
-    font-size: 20px;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;}
-    li a {
-        text-decoration: none;
-        color: black;
-    }
-    li a:hover {
-        color: white;
-    }   
-hr {
-    border: none;
-    border-top: 1px solid black;
-    margin: 20px 0; 
+
+.menu-navegacion ul {
+  display: flex;          /* Pone los links uno al lado del otro */
+  list-style: none;
+  gap: 25px;              /* Espacio entre cada opción */
 }
-.selection {
-    background-color: transparent;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
+
+.menu-navegacion a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Espacio compensatorio para el resto del contenido */
+body {
+  padding-top: 75px;      /* Para que el contenido de la página no se oculte tras la barra */
 }
 
