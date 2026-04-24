@@ -1,0 +1,167 @@
+html{
+    background-color:rgb(255, 214, 221);
+    user-select: none;
+
+}
+.header-estatico {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 100%;            /* Ocupa todo el ancho */
+    height: 70px;           /* Altura fija de tu barra */
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+    z-index: 1000;          /* Asegura que siempre esté por encima de las fotos */
+    display: flex;
+    align-items: center;    /* Centra el contenido verticalmente */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Logo a la izq, Menú a la derecha */
+    align-items: center;
+    width: 90%;             /* Espacio a los lados */
+    margin: 0 auto;         /* Centra el contenedor */
+  }
+  
+  .menu-navegacion ul {
+    display: flex;          /* Pone los links uno al lado del otro */
+    list-style: none;
+    gap: 25px;              /* Espacio entre cada opción */
+  }
+  
+  .menu-navegacion a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Espacio compensatorio para el resto del contenido */
+  body {
+    padding-top: 75px;  
+    display: flex;
+    justify-content: center;    /* Para que el contenido de la página no se oculte tras la barra */
+    align-items: center;
+  }
+  
+  
+  input{ 
+      position: relative;
+      top: 98%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+  
+  /* 📱 MÓVIL */
+@media (max-width: 600px) {
+    .icons {
+      opacity: 1;
+      position: static;
+      transform: none;
+      margin: 10px 0;
+      justify-content: center;
+    }
+}
+
+
+  .productos{
+    display: flex;
+    gap: 75px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.producto {
+  width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  
+
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* Precio */
+.precio {
+  position: relative;
+  top: 4px;
+  background: #ff4d4d;
+  color: #ffffff;
+  padding: 3px 0px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Iconos */
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.icons button {
+  background: #ffffff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: black;
+  transition: 0.2s;
+}
+
+.icons button:hover {
+  background: #ff4d4d;
+  color: #000000;
+}
+
+/* Mostrar iconos al pasar el mouse */
+.img-box:hover .icons {
+  opacity: 1;
+}
+
+h3 {
+  margin: 15px 0;
+}
+h4 {
+    color: white;
+}
+
+
+
+
+
+/* 📱 MÓVIL */
+@media (max-width: 600px) {
+  .icons {
+    opacity: 1;
+    position: static;
+    transform: none;
+    margin: 10px 0;
+    justify-content: center;
+  }
+}
